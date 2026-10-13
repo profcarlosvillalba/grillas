@@ -1,0 +1,20 @@
+<?php
+return [
+    'required'=>'El campo :attribute es obligatorio.',
+    'required_with'=>'Completá :attribute junto con :values.',
+    'string'=>'El campo :attribute debe ser texto.',
+    'email'=>'Ingresá un correo válido.',
+    'confirmed'=>'Las contraseñas no coinciden.',
+    'unique'=>'El valor de :attribute ya está registrado.',
+    'exists'=>'El valor de :attribute no existe o está desactivado.',
+    'different'=>':attribute y :other deben ser distintos.',
+    'date_format'=>':attribute debe tener una fecha válida.',
+    'after_or_equal'=>':attribute debe ser igual o posterior a :date.',
+    'integer'=>':attribute debe ser un número entero.',
+    'boolean'=>':attribute debe estar activado o desactivado.',
+    'in'=>'Seleccioná un valor válido para :attribute.',
+    'regex'=>'El formato de :attribute no es válido.',
+    'min'=>['string'=>':attribute debe tener al menos :min caracteres.','numeric'=>':attribute debe ser al menos :min.'],
+    'max'=>['string'=>':attribute admite hasta :max caracteres.','numeric'=>':attribute no puede superar :max.'],
+    'attributes'=>['name'=>'nombre','email'=>'correo','password'=>'contraseña','apellido'=>'apellido','nombre'=>'nombre','codigo'=>'código','responsable_id'=>'responsable','dupla_id'=>'dupla','movil_id'=>'móvil','fecha_ot'=>'fecha OT','role'=>'rol','desde'=>'fecha inicial','hasta'=>'fecha final','q'=>'búsqueda'],
+];

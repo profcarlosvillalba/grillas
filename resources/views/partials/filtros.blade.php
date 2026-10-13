@@ -1,0 +1,4 @@
+<label>Móvil / Legajo work<select name="movil_id"><option value="">Todos</option>@foreach($moviles as $movil)<option value="{{ $movil->id }}" @selected((string)request('movil_id')===(string)$movil->id)>{{ $movil->codigo }}</option>@endforeach</select></label>
+<label>Tipo<select name="tipo_equipo_id"><option value="">Todos</option>@foreach($tipos as $tipo)<option value="{{ $tipo->id }}" @selected((string)request('tipo_equipo_id')===(string)$tipo->id)>{{ $tipo->nombre }}</option>@endforeach</select></label>
+<label>Estado<select name="estado"><option value="">Todos</option><option value="pendiente" @selected(request('estado')==='pendiente')>Sin OT</option><option value="asignado" @selected(request('estado')==='asignado')>Con OT</option></select></label>
+<label class="search-label">Buscar MAC u OT<input name="q" value="{{ request('q') }}" maxlength="80" placeholder="MAC, serie o número de OT"></label>
